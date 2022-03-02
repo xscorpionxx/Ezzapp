@@ -406,7 +406,10 @@ class Homelogic {
               if (video) {
                 _controller.pause();
               }
-              Navigator.of(contexta).pop();
+              if(Navigator.canPop(contexta)){
+            Navigator.of(contexta).pop();  
+              }
+           
             });
           }
         });
