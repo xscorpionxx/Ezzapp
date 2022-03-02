@@ -402,7 +402,7 @@ class Homelogic {
           if (valuea == 1) {
             stop =true;
             timer.cancel();
-            Future.delayed(Duration(seconds: 1), () {
+            Future.delayed(Duration(milliseconds: 10), () {
               if (video) {
                 _controller.pause();
               }
